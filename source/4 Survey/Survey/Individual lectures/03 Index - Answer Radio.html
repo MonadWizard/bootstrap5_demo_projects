@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey - Questions</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body class="bg-light py-3 py-lg-5">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="display-4">Survey Name</h1>
+        <p class="lead">Subtitle for the Survey Name</p>
+      </div>
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a href="#step-1" class="nav-link h4 mb-0 active" id="step-1-tab" data-bs-toggle="tab" role="tab" aria-controls="step-1" aria-selected="true">Step 1<br><small class="d-none d-md-inline">Personal Info</small></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a href="#step-2" class="nav-link h4 mb-0" id="step-2-tab" data-bs-toggle="tab" role="tab" aria-controls="step-2" aria-selected="false">Step 2<br><small class="d-none d-md-inline">Questions w/answers</small></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a href="#step-3" class="nav-link h4 mb-0" id="step-3-tab" data-bs-toggle="tab" role="tab" aria-controls="step-3" aria-selected="false">Step 3<br><small class="d-none d-md-inline">Questions w/ratings</small></a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade pt-4 show active" id="step-1" role="tabpanel" aria-labelledby="step-1-tab">
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label class="form-label">Sex:</label>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="sex" id="sex-male" value="male">
+                  <label class="form-check-label" for="sex-male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="sex" id="sex-female" value="female">
+                  <label class="form-check-label" for="sex-female">Female</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label class="form-label" for="age">Age:</label>
+              <input type="number" class="form-control" id="age">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label" for="phone">Phone:</label>
+              <input type="tel" class="form-control" id="phone">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label" for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Firstname Lastname">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label" for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="username@domain.com">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 mb-3">
+              <label class="form-label" for="address">Address:</label>
+              <input type="text" class="form-control" id="address" placeholder="123 Street Name">
+            </div>
+            <div class="col-md-3 mb-3">
+              <label class="form-label" for="apartment">Apartment or floor:</label>
+              <input type="text" class="form-control" id="apartment" placeholder="B3, 4th Floor, or similar">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label" for="city">City:</label>
+              <input type="text" class="form-control" id="city" placeholder="City">
+            </div>
+            <div class="col-md-2 mb-3">
+              <label class="form-label" for="zip">Zip:</label>
+              <input type="number" class="form-control" id="zip" placeholder="123">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label class="form-label" for="country">Country:</label>
+              <select id="country" class="form-select">
+                <option value="" selected>- Select Country -</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Finland">Finland</option>
+                <option value="Norway">Norway</option>
+                <option value="Sweden">Sweden</option>
+              </select>
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-secondary d-block ms-auto" id="go-to-step-2">Step 2</button>
+        </div>
+        <div class="tab-pane fade pt-4" id="step-2" role="tabpanel" aria-labelledby="step-2-tab">
+          <h2 class="h5 text-center mb-3">Question #1: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img src="img/1600x900.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">A caption for the figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-1" value="option1">
+                <label class="form-check-label" for="radioButtonsQuestion1-1">Answer for radio 1</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-2" value="option2">
+                <label class="form-check-label" for="radioButtonsQuestion1-2">Answer for radio 2</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-3" value="option3">
+                <label class="form-check-label" for="radioButtonsQuestion1-3">Answer for radio 3</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-4" value="option4">
+                <label class="form-check-label" for="radioButtonsQuestion1-4">Answer for radio 4</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-5" value="option5">
+                <label class="form-check-label" for="radioButtonsQuestion1-5">Answer for radio 5</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input mt-2" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-6" value="option6">
+                <label class="form-check-label" for="radioButtonsQuestion1-6">
+                  <input type="text" class="form-control form-control-sm" id="radioButtonsQuestion1-other" placeholder="Other" aria-describedby="radioButtonsQuestion1-other-help">
+                </label>
+                <p id="radioButtonsQuestion1-other-help" class="form-text text-muted">If none of the answers above is appropriate for you please write your own answer in the input field.</p>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+          <h2 class="h5 text-center mb-3">Question #2: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img src="img/1600x900.png" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">A caption for the figure image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-1" value="option1">
+                <label class="form-check-label" for="radioButtonsQuestion2-1">Answer for radio 1</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-2" value="option2">
+                <label class="form-check-label" for="radioButtonsQuestion2-2">Answer for radio 2</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-3" value="option3">
+                <label class="form-check-label" for="radioButtonsQuestion2-3">Answer for radio 3</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-4" value="option4">
+                <label class="form-check-label" for="radioButtonsQuestion2-4">Answer for radio 4</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-5" value="option5">
+                <label class="form-check-label" for="radioButtonsQuestion2-5">Answer for radio 5</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input mt-2" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-6" value="option6">
+                <label class="form-check-label" for="radioButtonsQuestion2-6">
+                  <input type="text" class="form-control form-control-sm" id="radioButtonsQuestion2-other" placeholder="Other" aria-describedby="radioButtonsQuestion2-other-help">
+                </label>
+                <p id="radioButtonsQuestion2-other-help" class="form-text text-muted">If none of the answers above is appropriate for you please write your own answer in the input field.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade pt-4" id="step-3" role="tabpanel" aria-labelledby="step-3-tab">
+          
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

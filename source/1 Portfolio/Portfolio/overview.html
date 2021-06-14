@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Project Overview – Portfolio</title>
+    <style>
+      body {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent
+      }
+
+      a:hover {
+          color: #0056b3;
+          text-decoration: underline
+      }
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      strong {
+        text-transform: uppercase;
+      }
+      .preview {
+        overflow: hidden;
+      }
+      .preview .device {
+        position: relative;
+        width: 680px;
+        height: 400px;
+        margin: 0 auto;
+        border: 1px solid #999;
+      }
+      .preview .device, .preview .device:after,
+      .preview .device iframe {
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+      .preview .device iframe {
+        -webkit-transform: scale(0.75);
+                transform: scale(0.75);
+        border-radius: 1em;
+      }
+      .preview .device:after {
+        content: ' ';
+        background-color: #444;
+        position: absolute;
+      }
+      .preview .device-desktop {
+        width: 1275px;
+        height: 750px;
+        padding: 1em  1em 5em;
+        border-radius: 1em;
+      }
+      .preview .device-desktop:after {
+        width: 3em;
+        height: 3em;
+        bottom: 1em;
+        left: 47.5%;
+        border-radius: 100em;
+      }
+      .preview .device-desktop iframe {
+        width: 1700px;
+        height: 1000px;
+      }
+      .preview .device-laptop {
+        width: 1020px;
+        height: 600px;
+        padding: 1em  1em 5em;
+        border-radius: 1em;
+      }
+      .preview .device-laptop:after {
+        width: 3em;
+        height: 3em;
+        bottom: 1em;
+        left: 47.5%;
+        border-radius: 100em;
+      }
+      .preview .device-laptop iframe {
+        width: 1360px;
+        height: 800px;
+      }
+      .preview .device-tablet-p {
+        width: 576px;
+        height: 768px;
+        padding: 1em 1em 3em;
+        border-radius: 1em;
+      }
+      .preview .device-tablet-p:after {
+        width: 1.5em;
+        height: 1.5em;
+        bottom: .75em;
+        left: 47%;
+        border-radius: 100em;
+      }
+      .preview .device-tablet-p iframe {
+        width: 768px;
+        height: 1024px;
+      }
+      .preview .device-tablet-l {
+        width: 768px;
+        height: 576px;
+        padding: 1em 3em 1em 1em;
+        border-radius: 1em;
+      }
+      .preview .device-tablet-l:after {
+        width: 1.5em;
+        height: 1.5em;
+        left: 93.5%;
+        bottom: 47%;
+        border-radius: 100em;
+      }
+      .preview .device-tablet-l iframe {
+        width: 1024px;
+        height: 768px;
+      }
+      .preview .device-mobile-p iframe,
+      .preview .device-mobile-l iframe {
+        -webkit-transform: scale(0.75);
+                transform: scale(0.75);
+      }
+      .preview .device-mobile-p {
+        width: 240px;
+        height: 432px;
+        padding: 1em 1em 3em;
+        border-radius: 1em;
+      }
+      .preview .device-mobile-p:after {
+        width: 2em;
+        height: 2em;
+        bottom: .5em;
+        left: 45%;
+        border-radius: 100em;
+      }
+      .preview .device-mobile-p iframe {
+        width: 320px;
+        height: 576px;
+      }
+      .preview .device-mobile-l {
+        width: 432px;
+        height: 240px;
+        padding: 1em 3em 1em 1em;
+        border-radius: 1em;
+      }
+      .preview .device-mobile-l:after {
+        width: 2em;
+        height: 2em;
+        left: 91.5%;
+        bottom: 45%;
+        border-radius: 100em;
+      }
+      .preview .device-mobile-l iframe {
+        width: 576px;
+        height: 320px;
+      }
+      .preview iframe {
+        margin: 0;
+        border: 0;
+        -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+      }
+      .devices, .pages {
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 1rem;
+        padding: 0;
+      }
+      .devices > li, .pages > li {
+        display: inline-block;
+        line-height: 2em;
+        margin: 0 1em 0 0;
+      }
+      .devices .active,
+      .pages .active {
+        font-weight: bold;
+      }
+    </style>
+	</head>
+	<body>
+    <h1>Portfolio – Responsive Previewer</h1>
+    <section class="preview">
+      <ul class="pages">
+        <li><strong>Pages:</strong></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="portfolio-overview.html">Portfolio overview</a></li>
+        <li><a href="portfolio-item.html">Portfolio item</a></li>
+      </ul>
+      <ul class="devices">
+        <li><strong>Devices:</strong></li>
+        <li><a href="#mobile-p" class="active">Mobile Portrait</a></li>
+        <li><a href="#mobile-l">Mobile Landscape</a></li>
+        <li><a href="#tablet-p">Tablet Portrait</a></li>
+        <li><a href="#tablet-l">Tablet Landscape</a></li>
+        <li><a href="#laptop">Laptop</a></li>
+        <li><a href="#desktop">Desktop</a></li>
+      </ul>
+      <div class="device device-mobile-p">
+        <iframe src="Finished project/index.html"></iframe>
+      </div>
+    </section>
+  <script>
+    var device = document.querySelector('.device');
+    var iframe = document.querySelector('iframe');
+
+    var startDevice = window.location.hash.replace('#', '');
+    if (startDevice.length) {
+      device.classList = '';
+      device.classList.add('device', 'device-' + startDevice);
+    }
+
+    var devices = document.querySelectorAll('.devices a');
+    devices.forEach((deviceItem) => {
+      deviceItem.addEventListener('click', () => {
+        var deviceSelected = deviceItem.getAttribute('href').replace('#', '');
+        device.classList = '';
+        device.classList.add('device', 'device-' + deviceSelected);
+        removeActiveClassFromDevices();
+        deviceItem.classList.add('active');
+      })
+    })
+
+    function removeActiveClassFromDevices() {
+      devices.forEach((deviceItem) => {
+        deviceItem.classList.remove('active');
+      })
+    }
+
+    var pages = document.querySelectorAll('.pages a');
+    pages.forEach((page) => {
+      page.addEventListener('click', (event) => {
+        event.preventDefault();
+        var pageURL = page.getAttribute('href');
+        iframe.setAttribute('src', 'Finished project/' + pageURL);
+        removeActiveClassFromPages();
+        page.classList.add('active');
+      })
+    })
+
+    function removeActiveClassFromPages() {
+      pages.forEach((pageItem) => {
+        pageItem.classList.remove('active');
+      })
+    }
+  </script>
+	</body>
+</html>
